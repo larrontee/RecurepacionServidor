@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>EjDiciembre</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>controller.LoginServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>InicioServlet</servlet-name>
+		<servlet-class>controller.InicioServlet</servlet-class>
+	</servlet>
+
+
+	<servlet>
+		<servlet-name>RegisterServlet</servlet-name>
+		<servlet-class>controller.RegisterServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>ListaProductosServlet</servlet-name>
+		<servlet-class>controller.ListaProductosServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>EmpleadosServlet</servlet-name>
+		<servlet-class>controller.EmpleadosServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>AddEmpleadoServlet</servlet-name>
+		<servlet-class>controller.AddEmpleadoServlet</servlet-class>
+	</servlet>
+		<servlet>
+		<servlet-name>ChangeAssigmentServlet</servlet-name>
+		<servlet-class>controller.ChangeAssigmentServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>AddProductServlet</servlet-name>
+		<servlet-class>controller.AddProductServlet</servlet-class>
+	</servlet>
+
+	<!-- mapeo de los servlets -->
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>InicioServlet</servlet-name>
+		<url-pattern>/Inicio</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>RegisterServlet</servlet-name>
+		<url-pattern>/Register</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet-mapping>
+		<servlet-name>ListaProductosServlet</servlet-name>
+		<url-pattern>/ListaProductos</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>EmpleadosServlet</servlet-name>
+		<url-pattern>/Admin/Empleados</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>AddEmpleadoServlet</servlet-name>
+		<url-pattern>/Admin/AddEmpleado</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>ChangeAssigmentServlet</servlet-name>
+		<url-pattern>/Admin/changeOrderCustomer</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>AddProductServlet</servlet-name>
+		<url-pattern>/Admin/addProduct</url-pattern>
+	</servlet-mapping>
+	
+	
+</web-app>

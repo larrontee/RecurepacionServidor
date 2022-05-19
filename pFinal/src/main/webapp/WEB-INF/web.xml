@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>pFinal</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+   <servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>controller.LoginServlet</servlet-class>
+	</servlet>
+
+   <servlet>
+		<servlet-name>LogoutServlet</servlet-name>
+		<servlet-class>controller.LogoutServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>InicioServlet</servlet-name>
+		<servlet-class>controller.InicioServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>RegisterServlet</servlet-name>
+		<servlet-class>controller.RegisterServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>ListaProductosServlet</servlet-name>
+		<servlet-class>controller.ListaProductosServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>EmpleadosServlet</servlet-name>
+		<servlet-class>controller.EmpleadosServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>ChangeAssigmentServlet</servlet-name>
+		<servlet-class>controller.ChangeAssigmentServlet</servlet-class>
+	</servlet>
+
+
+	<servlet>
+		<servlet-name>AddCustomerServlet</servlet-name>
+		<servlet-class>controller.AddCustomerServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>AddEmployeeServlet</servlet-name>
+		<servlet-class>controller.AddEmployeeServlet</servlet-class>
+	</servlet>
+			
+	<servlet>
+		<servlet-name>AddOfficeServlet</servlet-name>
+		<servlet-class>controller.AddOfficeServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>AddOrderdetailsServlet</servlet-name>
+		<servlet-class>controller.AddOrderdetailsServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>AddOrderServlet</servlet-name>
+		<servlet-class>controller.AddOrderServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>AddPaymentServlet</servlet-name>
+		<servlet-class>controller.AddPaymentServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>AddProductlineServlet</servlet-name>
+		<servlet-class>controller.AddProductlineServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>AddProductServlet</servlet-name>
+		<servlet-class>controller.AddProductServlet</servlet-class>
+	
+	</servlet>
+	
+<!-- 	<filter> -->
+<!-- 		<filter-name>LoggedFilter</filter-name> -->
+<!-- 		<filter-class>filters.LoggedFilter</filter-class>		 -->
+<!-- 	</filter> -->
+	
+<!-- 	<filter> -->
+<!-- 		<filter-name>UserFilter</filter-name> -->
+<!-- 		<filter-class>filters.UserFilter</filter-class>		 -->
+<!-- 	</filter> -->
+	
+<!-- 	<filter> -->
+<!-- 		<filter-name>AdminFilter</filter-name> -->
+<!-- 		<filter-class>filters.AdminFilter</filter-class>		 -->
+<!-- 	</filter> -->
+		
+<!-- 	<filter-mapping> -->
+<!-- 		<filter-name>LoggedFilter</filter-name> -->
+<!-- 		<url-pattern>/</url-pattern> -->
+<!-- 	</filter-mapping> -->
+	
+<!-- 	<filter-mapping> -->
+<!-- 		<filter-name>UserFilter</filter-name> -->
+<!-- 		<url-pattern>/</url-pattern> -->
+<!-- 	</filter-mapping> -->
+	
+<!-- 	<filter-mapping> -->
+<!-- 		<filter-name>AdminFilter</filter-name> -->
+<!-- 		<url-pattern>/Admin/*</url-pattern> -->
+<!-- 	</filter-mapping> -->
+	
+	<!-- mapeo de los servlets -->
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/Logout</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>InicioServlet</servlet-name>
+		<url-pattern>/Inicio</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>RegisterServlet</servlet-name>
+		<url-pattern>/Register</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet-mapping>
+		<servlet-name>ListaProductosServlet</servlet-name>
+		<url-pattern>/ListaProducts</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>EmpleadosServlet</servlet-name>
+		<url-pattern>/ListaEmployees</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>ChangeAssigmentServlet</servlet-name>
+		<url-pattern>/changeOrderCustomer</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>AddCustomerServlet</servlet-name>
+		<url-pattern>/AddCustomers</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>AddEmployeeServlet</servlet-name>
+		<url-pattern>/AddEmployees</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>AddOfficeServlet</servlet-name>
+		<url-pattern>/AddOffices</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>AddOrderdetailsServlet</servlet-name>
+		<url-pattern>/AddOrderdetails</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>AddOrderServlet</servlet-name>
+		<url-pattern>/AddOrders</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>AddPaymentServlet</servlet-name>
+		<url-pattern>/AddPayments</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>AddProductlineServlet</servlet-name>
+		<url-pattern>/AddProductlines</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet-mapping>
+		<servlet-name>AddProductServlet</servlet-name>
+		<url-pattern>/AddProducts</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet-mapping>
+		<servlet-name>default</servlet-name>
+		<url-pattern>/img/*</url-pattern>
+		<url-pattern>/css/*</url-pattern>
+		<url-pattern>/js/*</url-pattern>
+	</servlet-mapping>
+	
+
+</web-app>
